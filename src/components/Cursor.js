@@ -14,9 +14,12 @@ export default function Cursor() {
                 });
             }}
             style={{
-                position: 'relative',
+                position: 'absolute',
+                // position: 'relative',
                 width: '100vw',
                 height: '100vh',
+                top: '0',
+                left: '0'
             }}>
             <div style={{
                 position: 'absolute',
