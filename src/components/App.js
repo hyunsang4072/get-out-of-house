@@ -5,6 +5,7 @@ import PackingList from './PackingList';
 import Logo from './Logo';
 import Form from './Form';
 import Stats from './Stats';
+// import Cursor from './Cursor';
 
 export function App() {
   const [items, setItems] = useState([]);
@@ -32,6 +33,7 @@ export function App() {
     <div className="app">
       <Logo />
       <Form onAddItems={handleAddItems} />
+      {/* <Cursor /> */}
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} onClearList={handleClearList} />
       <Stats items={items} />
     </div>
